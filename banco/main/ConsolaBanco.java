@@ -28,6 +28,7 @@ public class ConsolaBanco {
 		this.gestores = new ArrayList<>();
 		this.clientes = new ArrayList<>();
 		this.mensajes = new ArrayList<>();
+		this.transferencias = new ArrayList<>();
 		this.siguienteIdGestor = 1;
 		this.siguienteIdCliente = 1;
 		this.siguienteIdMensaje = 1;

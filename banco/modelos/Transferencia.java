@@ -61,10 +61,8 @@ public class Transferencia {
 		this.fecha = fecha;
 	}
 
-	
-	
-	
-	
-	
+	public String toString() {
+		return "Transferencia{id: " + this.id + ", idOrdenante: " + this.id_ordenante+ " idBeneficiario: " + this.id_beneficiario + " importe: " + this.importe + " concepto: " + this.concepto + "}";
+	}
 	
 }
