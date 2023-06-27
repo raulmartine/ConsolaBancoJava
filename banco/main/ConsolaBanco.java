@@ -57,7 +57,7 @@ public class ConsolaBanco {
 		for (int i = 0; i < numeroGestores; i++) {
 			String usuario = Utiles.nombreAleatorio();
 			String correo = Utiles.correoAleatorio();
-			Gestor gestor = new Gestor(siguienteIdGestor, usuario, "", correo, "");
+			Gestor gestor = new Gestor(siguienteIdGestor, usuario, "1234", correo, "");
 			gestores.add(gestor);
 			siguienteIdGestor++;
 		}
@@ -408,6 +408,7 @@ public class ConsolaBanco {
 		teclado.nextLine();
 		System.out.println("Introduce el importe: ");
 		double importe = teclado.nextDouble();
+		teclado.nextLine();
 		System.out.println("Introduce el concepto: ");
 		String concepto = teclado.nextLine();
 		int idOrigen = gestorLogeado.getId();
@@ -416,8 +417,7 @@ public class ConsolaBanco {
 		transferencias.add(transferencia);
 		siguienteIdMensaje++;
 		System.out.println("Transferencia enviado correctamente.\n");
-		
-//		quitar dinero y sumar a la otra cuenta	
+	
 	}
 	
 	private void cerrar() {

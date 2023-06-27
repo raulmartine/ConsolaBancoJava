@@ -32,7 +32,7 @@ public class Cliente extends Usuario {
 	}
 
 	public String toString() {
-		return "Cliente{id: " + this.id + ", usuario: " + this.usuario + "}";
+		return "Cliente{id: " + this.id + ", usuario: " + this.usuario + " saldo: " + this.saldo + "}";
 	}
 	
 	public boolean equals(Object o) {
