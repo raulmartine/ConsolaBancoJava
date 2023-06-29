@@ -415,7 +415,7 @@ public class ConsolaBanco {
 		
 		Transferencia transferencia = new Transferencia(siguienteIdMensaje, idOrigen, idDestino, importe, concepto);
 		transferencias.add(transferencia);
-		siguienteIdMensaje++;
+		siguienteIdTransferencia++;
 		System.out.println("Transferencia enviado correctamente.\n");
 	
 	}
